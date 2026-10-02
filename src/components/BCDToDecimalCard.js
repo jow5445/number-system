@@ -27,53 +27,53 @@ function BCDToDecimalCard() {
   };
 
   return (
-      <div className="card mb-4">
-        <div className="card-header">
-          <strong>Binary Coded Decimal (BCD) to Decimal Conversion</strong>
-        </div>
-        <div className="card-body">
-          <form onSubmit={handleSubmit}>
-            <div className="form-group">
-              <label htmlFor="BCDNumberBCDToDecimalCard">
-                Binary Coded Decimal (BCD) Number:
-              </label>
-              <input
-                  className="form-control"
-                  type="text"
-                  value={BCDNumber}
-                  id="BCDNumberBCDToDecimalCard"
-                  onChange={(e) => setBCDNumber(e.target.value)}
-                  placeholder="Enter Binary Coded Decimal (BCD) number"
-              />
-            </div>
-
-            <div className="form-group mt-2">
-              <label htmlFor="decimalNumberBCDToDecimalCard">
-                Decimal Number:
-              </label>
-              <input
-                  className="form-control"
-                  type="text"
-                  value={decimalNumber}
-                  id="decimalNumberBCDToDecimalCard"
-                  disabled
-              />
-            </div>
-            <div className="d-flex justify-content-between align-items-center">
-              <button className="btn btn-primary mt-4" type="submit">
-                Convert
-              </button>
-              <button
-                  className="btn btn-outline-primary mt-4"
-                  type="button"
-                  onClick={reset}
-              >
-                Reset
-              </button>
-            </div>
-          </form>
-        </div>
+    <div className="card mb-4">
+      <div className="card-header">
+        <strong>Binary Coded Decimal (BCD) to Decimal Conversion</strong>
       </div>
+      <div className="card-body">
+        <form onSubmit={handleSubmit}>
+          <div className="form-group">
+            <label htmlFor="BCDNumberBCDToDecimalCard">
+              Binary Coded Decimal (BCD) Number:
+            </label>
+            <input
+              className="form-control"
+              type="text"
+              value={BCDNumber}
+              id="BCDNumberBCDToDecimalCard"
+              onChange={(e) => setBCDNumber(e.target.value)}
+              placeholder="Enter Binary Coded Decimal (BCD) number"
+            />
+          </div>
+
+          <div className="form-group mt-2">
+            <label htmlFor="decimalNumberBCDToDecimalCard">
+              Decimal Number:
+            </label>
+            <input
+              className="form-control"
+              type="text"
+              value={decimalNumber}
+              id="decimalNumberBCDToDecimalCard"
+              disabled
+            />
+          </div>
+          <div className="d-flex justify-content-between align-items-center">
+            <button className="btn btn-primary mt-4" type="submit">
+              Convert
+            </button>
+            <button
+              className="btn btn-outline-primary mt-4"
+              type="button"
+              onClick={reset}
+            >
+              Reset
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
   );
 }
 
