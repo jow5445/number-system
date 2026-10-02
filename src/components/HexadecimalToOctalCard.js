@@ -73,5 +73,4 @@ function HexadecimalToOctalCard() {
     </div>
   );
 }
-
 export default HexadecimalToOctalCard;
