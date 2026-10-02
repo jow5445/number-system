@@ -19,7 +19,7 @@ This React app can perform the following conversions:
 
 ## Live Demo
 
-https://number-converter-niteshpk.vercel.app/
+[Number System](https://number-system-kappa.vercel.app)
 
 ## Getting Started
 
@@ -35,7 +35,7 @@ These instructions will get you a copy of the project up and running on your loc
 1. Clone the repository:
 
    ```
-   git clone https://github.com/niteshpk/number-converter.git
+   https://github.com/jow5445/number-system.git
    cd number-converter
    ```
 

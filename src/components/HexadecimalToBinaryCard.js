@@ -9,7 +9,7 @@ function HexadecimalToBinaryCard() {
 
     const hexadecimalRegex = /^[0-9A-Fa-f]+$/;
     if (!hexadecimalRegex.test(hexadecimalNumber)) {
-      alert("Please enter a valid hexadecimal number");
+      alert("Please enter a valid hexadecimal number ");
       return;
     }
 
