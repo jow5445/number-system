@@ -24,54 +24,54 @@ function BinaryToHexadecimalCard() {
   };
 
   return (
-    <div className="card mb-4">
-      <div className="card-header">
-        <strong>Binary to Hexadecimal Conversion</strong>
-      </div>
-      <div className="card-body">
-        <form onSubmit={handleSubmit}>
-          <div className="form-group">
-            <label htmlFor="binaryNumberBinaryToHexadecimalCard">
-              Binary Number:
-            </label>
-            <input
-              className="form-control"
-              type="text"
-              value={binaryNumber}
-              id="binaryNumberBinaryToHexadecimalCard"
-              onChange={(e) => setBinaryNumber(e.target.value)}
-              placeholder="Enter binary number"
-            />
-          </div>
+      <div className="card mb-4">
+        <div className="card-header">
+          <strong>Binary to Hexadecimal Conversion</strong>
+        </div>
+        <div className="card-body">
+          <form onSubmit={handleSubmit}>
+            <div className="form-group">
+              <label htmlFor="binaryNumberBinaryToHexadecimalCard">
+                Binary Number:
+              </label>
+              <input
+                  className="form-control"
+                  type="text"
+                  value={binaryNumber}
+                  id="binaryNumberBinaryToHexadecimalCard"
+                  onChange={(e) => setBinaryNumber(e.target.value)}
+                  placeholder="Enter binary number"
+              />
+            </div>
 
-          <div className="form-group mt-2">
-            <label htmlFor="hexadecimalNumberBinaryToHexadecimalCard">
-              {" "}
-              Hexadecimal Number:
-            </label>
-            <input
-              className="form-control"
-              type="text"
-              value={hexadecimalNumber}
-              id="hexadecimalNumberBinaryToHexadecimalCard"
-              disabled
-            />
-          </div>
-          <div className="d-flex justify-content-between align-items-center">
-            <button className="btn btn-primary mt-4" type="submit">
-              Convert
-            </button>
-            <button
-              className="btn btn-outline-primary mt-4"
-              type="button"
-              onClick={reset}
-            >
-              Reset
-            </button>
-          </div>
-        </form>
+            <div className="form-group mt-2">
+              <label htmlFor="hexadecimalNumberBinaryToHexadecimalCard">
+                {" "}
+                Hexadecimal Number:
+              </label>
+              <input
+                  className="form-control"
+                  type="text"
+                  value={hexadecimalNumber}
+                  id="hexadecimalNumberBinaryToHexadecimalCard"
+                  disabled
+              />
+            </div>
+            <div className="d-flex justify-content-between align-items-center">
+              <button className="btn btn-primary mt-4" type="submit">
+                Convert
+              </button>
+              <button
+                  className="btn btn-outline-primary mt-4"
+                  type="button"
+                  onClick={reset}
+              >
+                Reset
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
-    </div>
   );
 }
 
